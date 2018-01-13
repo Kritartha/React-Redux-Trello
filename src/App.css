@@ -1,0 +1,23 @@
+.App-header {
+  background-color: #222;
+  height: 60px;
+  color: white;
+}
+
+.Board {
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.event-card {
+  border: 1px dashed gray;
+  cursor: move;
+  padding: 4px;
+  width: 10%;
+}
+
+li.placeholder {background: rgb(255,240,120);}
+li.placeholder:before {
+  content: "Drop here";
+  color: rgb(225,210,90);
+}

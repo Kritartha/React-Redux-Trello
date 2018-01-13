@@ -29,7 +29,8 @@ class List extends Component {
 
     render() {
         return(
-            <div className="Board-List">
+            <div className="Board-List d-flex align-items-center flex-column">
+                <AddEvent />
                 {this.props.events.map((event, i) => 
                     <EventItem 
                         key={event.id}
@@ -38,7 +39,6 @@ class List extends Component {
                         moveCard={this.moveCard}
                         deleteEvent={this.props.deleteEvent}
                         {...event}/>)}
-                <AddEvent />
             </div>
         )
     }

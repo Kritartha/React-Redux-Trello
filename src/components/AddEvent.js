@@ -26,13 +26,16 @@ class AddEvent extends Component {
         const {currentEvent} = this.props
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
-                    <input  type="text"
+                <form className="form-inline d-flex justify-content-center" onSubmit={this.handleSubmit}>
+                    <input  className="form-control mb-2 mr-sm-2 mb-sm-0"
+                            type="text"
                             onChange={this.handleInputChange} 
                             value={currentEvent}/>
-                </form>
-                <button className="btn-event-add" 
+
+                    <button className="btn btn-primary" 
+                        type="submit"
                         onClick={this.handleAddEvent}>Add</button>
+                </form>
             </div>
         )
     }

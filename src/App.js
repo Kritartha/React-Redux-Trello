@@ -9,6 +9,9 @@ class App extends Component {
       <div className="App">
         <Router>
           <div className="Board">
+            <nav className="navbar navbar-inverse bg-inverse">
+                <p className="heading">Krith's Sortable</p>
+            </nav>
             <List />
           </div>
         </Router>

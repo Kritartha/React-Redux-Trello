@@ -72,11 +72,17 @@ class EventItem extends Component {
         return connectDragSource(
             connectDropTarget(
                 <ul style={{opacity: opacity}}>
-                    <div className="w3-card event-card">
-                        <span className="delete-item">
-                            <button onClick={()=> deleteEvent(id)}>x</button>
-                        </span>
-                        <p>{text}</p>
+                    <div className="main-card card text-center">
+                        <div className="card-block">
+                            <p className="card-title"><b>{text}</b></p>
+                            <div className="input-group">
+                                <span className="card-text">id: {id}</span>
+                                <button 
+                                    className="btn-delete btn btn-danger" 
+                                    onClick={()=> deleteEvent(id)}> Delete <span className="fa fa-trash"/>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </ul>
             )

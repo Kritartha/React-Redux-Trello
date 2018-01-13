@@ -1,3 +1,10 @@
 {
-  "events": []
+  "events": [
+    {
+      "text": "Kritartha",
+      "isComplete": false,
+      "status": "in-progress",
+      "id": 1
+    }
+  ]
 }

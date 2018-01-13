@@ -1,23 +1,70 @@
+.navbar {
+  height: 50px;
+}
+
+.heading {
+  color: white;
+}
+
+.App {
+  position: absoulte;
+  left: 30%;
+}
+
 .App-header {
   background-color: #222;
   height: 60px;
   color: white;
 }
 
-.Board {
-  margin-left: 60px;
-  margin-top: 60px;
+.Board-List {
+  align-content: center;
+  margin-top: 40px;
 }
 
-.event-card {
-  border: 1px dashed gray;
-  cursor: move;
-  padding: 4px;
-  width: 10%;
+.Board {
+  background: whitesmoke;
 }
 
 li.placeholder {background: rgb(255,240,120);}
 li.placeholder:before {
   content: "Drop here";
   color: rgb(225,210,90);
+}
+
+.btn-delete {
+  background: #F1443D;
+  color: white;
+  border: 0px;
+  padding: 4px;
+  padding-left: 8px;
+  font-size: 0.7em;
+  padding-right: 8px;
+  border-radius: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.main-card {
+  height: 68px;
+  width: 20rem;
+  border-radius: 2px;
+  color: white;
+  background: #2687DA;
+  padding: 0.25rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-title {
+  height: 10px;
+  margin-bottom: 20px;
+}
+
+.card-block {
+  padding: 0.25em;
+}
+
+.form-inline {
+  margin-bottom: 10px;
 }
